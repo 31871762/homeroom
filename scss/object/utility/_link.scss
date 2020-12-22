@@ -1,0 +1,15 @@
+/* link - utility
+--------------------------------------------------------- */
+
+.u-normal-link
+{
+    color: $base-link-color !important;
+    &:link
+    {
+        color: $base-link-color !important;
+    }
+    &:hover
+    {
+        opacity: .7;
+    }
+}

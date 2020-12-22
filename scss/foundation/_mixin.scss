@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+
+// clearfix
+@mixin clearfix{
+    zoom:1;
+
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin spacing($property, $direction, $size, $unit: px) {
+    $margin_padding_flg : $property;
+    $property: $property - $direction;
+    $property-value: $size + $unit;
+    $class-prefix: '';
+    $class-unit: $unit;
+
+    $class-base-prefix: u-m;
+    $class-base-prefix-padding: u-p;
+    $class-prefix-top : t;
+    $class-prefix-right : r;
+    $class-prefix-bottom: b;
+    $class-prefix-left: l;
+    $class-prefix-negative: n;
+    $class-size-zero-pad: '0';
+    $class-unit-for-px: '';
+
+    @if $unit == px {
+        $class-unit: $class-unit-for-px;
+    }
+    @if $margin_padding_flg == padding {
+        $class-base-prefix: $class-base-prefix-padding;
+    }
+    @if $direction == top {
+        $class-prefix: $class-base-prefix + $class-prefix-top;
+    }
+    @else if $direction == right {
+        $class-prefix: $class-base-prefix + $class-prefix-right;
+    }
+    @else if $direction == bottom {
+        $class-prefix: $class-base-prefix + $class-prefix-bottom;
+    }
+    @else if $direction == left {
+        $class-prefix: $class-base-prefix + $class-prefix-left;
+    }
+    @if ($size) < 0 {
+        $class-prefix: $class-prefix + $class-prefix-negative;
+        $size: abs($size); // e.g. -10px -> 10px
+    }
+    @if ($size) < 10 {
+        $size: $class-size-zero-pad + abs($size);
+    }
+    // OUTPUT
+    .#{$class-prefix}#{$size}#{$class-unit} { #{$property}: $property-value !important; }
+}
+
+// @mixin output-margin
+// @description マージン調整用classの生成
+// spacing.scssよりもあとに読み込む必要があります⇒不必要であれば、削除
+
+@mixin output-margin {
+
+    // margin-top
+    @for $i from 0 through 20 {
+        @include spacing(margin, top, $i);
+    }
+    $i: 30;
+    @while $i <= 50 {
+        @include spacing(margin, top, $i);
+        $i: $i + 10;
+    }
+
+    // margin-bottom
+    @for $i from 0 through 20 {
+        @include spacing(margin, bottom, $i);
+    }
+    $i: 30;
+    @while $i <= 100 {
+        @include spacing(margin, bottom, $i);
+        $i: $i + 10;
+    }
+
+    // margin-right
+    @for $i from 0 through 20 {
+        @include spacing(margin, right, $i);
+    }
+    $i: 30;
+    @while $i <= 50 {
+        @include spacing(margin, right, $i);
+        $i: $i + 10;
+    }
+
+    // margin-left
+    @for $i from 0 through 20 {
+        @include spacing(margin, left, $i);
+    }
+    $i: 30;
+    @while $i <= 50 {
+        @include spacing(margin, left, $i);
+        $i: $i + 10;
+    }
+
+    // Negative margin-top
+    @for $i from 1 through 20 {
+        @include spacing(margin, top, -$i);
+    }
+    $i: 30;
+    @while $i <= 50 {
+        @include spacing(margin, top, -$i);
+        $i: $i + 10;
+    }
+
+    // Negative margin-bottom
+    @for $i from 1 through 20 {
+        @include spacing(margin, bottom, -$i);
+    }
+    $i: 30;
+    @while $i <= 50 {
+        @include spacing(margin, bottom, -$i);
+        $i: $i + 10;
+    }
+}
+
+@mixin output-padding {
+
+    // padding-top
+    @for $i from 0 through 20 {
+        @include spacing(padding, top, $i);
+    }
+    $i: 30;
+    @while $i <= 50 {
+        @include spacing(padding, top, $i);
+        $i: $i + 10;
+    }
+
+    // padding-bottom
+    @for $i from 0 through 20 {
+        @include spacing(padding, bottom, $i);
+    }
+    $i: 30;
+    @while $i <= 50 {
+        @include spacing(padding, bottom, $i);
+        $i: $i + 10;
+    }
+
+    // padding-right
+    @for $i from 0 through 20 {
+        @include spacing(padding, right, $i);
+    }
+    $i: 30;
+    @while $i <= 50 {
+        @include spacing(padding, right, $i);
+        $i: $i + 10;
+    }
+
+    // padding-left
+    @for $i from 0 through 20 {
+        @include spacing(padding, left, $i);
+    }
+    $i: 30;
+    @while $i <= 50 {
+        @include spacing(padding, left, $i);
+        $i: $i + 10;
+    }
+}
+

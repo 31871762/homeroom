@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>homeroom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="./css/common.css?wei">
+    <link rel="stylesheet" href="./css/pages/top.css?i120345">
+</head>
+<!--
+これやりたい
+//https://oku-log.com/blog/scroll-effect/
+https://tympanus.net/Development/BlockRevealers/
+//https://design-remarks.com/easy-inview/
+
+//液体の動き参考
+https://goworkship.com/magazine/blob-animated-backgrounds/
+-->
+<body>
+<header class="l-header m-header">
+    <div class="m-header__inner">
+        <h1 class="m-header__logo"><img src="./img/logo_homeroom.svg" width="" height="" alt="homeroom"></h1>
+        <!--
+        <div class="m-header__cta">
+            <a href="/" class="c-btn">今すぐはじめる</a>
+        </div>
+        -->
+    </div>
+</header>
+<div class="l-container wrapper">
+    <section class="hero">
+        <div class="hero__inner">
+            <h2 class="hero__title js-scroll"><div class="motion-txt"><span class="motion-inner">キャンパスの臨場感を、</span></div><br>
+                <div class="motion-txt"><span class="motion-inner">自宅で。</span></div></h2>
+            <div class="hero__cta"><a href="" class="c-btn s-arrow modal-open">デモへ進む</a></div>
+            <div class="hero__sublink"><a href="#" class="is-not-allowed">資料請求はこちら</a></div>
+        </div>
+        <svg id="svg" class="svg-hyotan" xmlns="http://www.w3.org/2000/svg"></svg>
+    </section>
+
+    <section class="concept">
+        <div class="m-title-group concept__title">
+            <h2 class="m-title-group__title js-scroll"><div class="motion-txt"><span class="motion-inner">Concept</span></div></h2>
+            <div class="m-title-group__notes js-scroll"><div class="motion-txt"><span class="motion-inner">コンセプト</span></div></div>
+        </div>
+        <div class="concept__media">
+            <div class="concept__media__visual">
+                <img src="./img/img_concept.jpg" width="" height="" alt="" class="concept__media__visual__img">
+            </div>
+            <div class="concept__media__movie">
+                <div class="concept__media__movie__title">Movie</div>
+                <div class="concept__media__movie__media"><img src="" width="" height="" alt=""></div>
+            </div>
+        </div>
+
+        <div class="concept__textbox">
+            <h2 class="concept__textbox__title">学習時間を効率的に、刺激的に。<br>ずっと続けられる学習習慣を支援します。</h2>
+            <div class="concept__textbox__detail">オンラインに特化した学習管理機能にコミュニケーション機能を連結した、統合型の学習支援システムです。制作した作品の共有や情報共有を通して、学生や先生との間でコミュニケーションが図れます。学習理解度を高め、継続して進められる機能が特長です。</div>
+        </div>
+    </section>
+
+
+
+    <section class="feature01">
+        <svg id="svg2" class="svg-starfish" xmlns="http://www.w3.org/2000/svg"></svg>
+        <div class="feature01__inner">
+            <div class="m-title-group feature01__title">
+                <h2 class="m-title-group__title js-scroll"><div class="motion-txt"><span class="motion-inner">Feature</span></div></h2>
+                <div class="m-title-group__notes js-scroll"><div class="motion-txt"><span class="motion-inner">サービスの特長</span></div></div>
+            </div>
+            <div class="feature01__wrap">
+                <div class="feature01__textbox js-scroll slide-up">
+                    <div class="feature01__textbox__num">01</div>
+                    <h2 class="feature01__textbox__title">作品の投稿や共有をとおして<br>学びが深まる
+                    </h2>
+                    <div class="feature01__textbox__detail">学生は、履修済みの科目について、他の学生の投稿作品を閲覧できます。学生自身の作品を投稿することができます。多くの作品に触れることや、「いいね」など相互のレビューを通して学びを深めることができます。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature02">
+        <div class="feature02__inner">
+            <div class="feature02__wrap">
+                <div class="feature02__textbox js-scroll slide-up">
+                    <div class="feature02__textbox__num">02</div>
+                    <h2 class="feature02__textbox__title">外発的動機付けを促進し、<br>学習の継続性が高まるタイムライン</h2>
+                    <div class="feature02__textbox__detail">学習した科目の時間や、提出した課題、おすすめの書籍の共有といったアクティビティがタイムラインに流れます。外発的な動機付けの形成を自然と促し、孤独感なく学習を進められます。共有範囲が設定できるので、プライバシーへの配慮も対応できます。</div>
+                </div>
+                <div class="feature02__visual">
+                    <img src="./img/img_timeline_2.png" width="" height="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature03">
+        <div class="feature03__inner">
+            <div class="feature03__textbox js-scroll slide-up">
+                <div class="feature03__textbox__num">03</div>
+                <h2 class="feature03__textbox__title">さまざまな機能で学習をサポート</h2>
+            </div>
+            <ul class="func-list">
+                <li class="func-list__item js-scroll slide-up">
+                    <div class="func-list__item__img"><img src="./img/ico_recording.svg" alt=""></div>
+                    <div class="func-list__item__title">学習の進捗を記録して、<br>
+                        自己管理を促進</div>
+                    <div class="func-list__item__lead">
+                        勉強時間や進捗の度合いを記録することで、学生自身による進捗状況の把握と学習の持続性を向上させます。
+                    </div>
+                </li>
+                <li class="func-list__item js-scroll slide-up">
+                    <div class="func-list__item__img"><img src="./img/ico_coaching.svg" alt=""></div>
+                    <div class="func-list__item__title">コーチ（講師／教授）による<br>学習サポート機能</div>
+                    <div class="func-list__item__lead">
+                        コーチ（講師／教授）が日々の学習に伴走し、学習を進める際の悩み事の相談を進捗管理をサポート。
+                    </div>
+                </li>
+
+                <li class="func-list__item js-scroll slide-up">
+                    <div class="func-list__item__img"><img src="./img/ico_badge.svg" alt=""></div>
+                    <div class="func-list__item__title">ミッションクリアで<br>
+                        バッジがもらえる</div>
+                    <div class="func-list__item__lead">
+                        あらかじめ決定した目標を達成することでバッジを付与し、学生のモチベーションを高めます。
+                    </div>
+                </li>
+<!--
+                <li class="func-list__item">
+                    <div class="func-list__item__img"><img src="./img/ico_calendar.svg" alt=""></div>
+                    <div class="func-list__item__title">履修プランの登録や<br>
+                        提出状況の管理がしやすく</div>
+                    <div class="func-list__item__lead">
+                        履修の状況や、提出日などのスケジュールが一覧で把握できるので見逃しがありません。
+                    </div>
+                </li>
+
+                <li class="func-list__item">
+                    <div class="func-list__item__img"><img src="./img/ico_calendar.svg" alt=""></div>
+                    <div class="func-list__item__title">Zoomとのシームレスな<br>
+                        連携で使いやすく</div>
+                    <div class="func-list__item__lead">
+                        履修の状況や、提出日などのスケジュールが一覧で把握できるので見逃しがありません。
+                    </div>
+                </li>
+
+                <li class="func-list__item">
+                    <div class="func-list__item__img"><img src="./img/ico_calendar.svg" alt=""></div>
+                    <div class="func-list__item__title">履修プランの登録や<br>
+                        提出状況の管理がしやすく</div>
+                    <div class="func-list__item__lead">
+                        履修の状況や、提出日などのスケジュールが一覧で把握できるので見逃しがありません。
+                    </div>
+                </li>
+                -->
+            </ul>
+        </div>
+    </section>
+
+    <section class="topics">
+        <svg id="svg3" class="svg-beans" xmlns="http://www.w3.org/2000/svg"></svg>
+        <div class="m-title-group topics__title">
+            <h2 class="m-title-group__title js-scroll"><div class="motion-txt"><span class="motion-inner">Topics</span></div></h2>
+            <div class="m-title-group__notes js-scroll"><div class="motion-txt"><span class="motion-inner">トピックス</span></div></div>
+        </div>
+
+        <ul class="topics-list">
+            <li class="topics-list__item is-first">
+                <a href="#" class="is-not-allowed"><span class="date">2021年1月18日</span>学習管理システム「学習管理ABC」とAPI連携しました</a>
+                <span class="plus" id="js-topics"></span>
+            </li>
+            <div class="topics-list__split">
+                <li class="topics-list__item">
+                    <a href="#" class="is-not-allowed"><span class="date">2020年12月26日</span>アップデート情報2020年12月</a>
+                </li>
+                <li class="topics-list__item">
+                    <a href="#" class="is-not-allowed"><span class="date">2020年11月15日</span>homeroom東海支店開設のお知らせ</a>
+                </li>
+                <li class="topics-list__item">
+                    <a href="#" class="is-not-allowed"><span class="date">2020年11月2日</span>ドキュメントダウンロード機能について改修を実施いたします</a>
+                </li>
+                <li class="topics-list__item">
+                    <a href="#" class="is-not-allowed"><span class="date">2020年10月06日</span>大学向けLMS「homeroom」が5周年を迎え、特設サイト公開</a>
+                </li>
+            </div>
+        </ul>
+    </section>
+
+  <!--  <section class="banner">
+        <ul class="banner-list" id="js-banner-list">
+            <li class="banner-list__item">
+                <a href="#" class="banner-list__item__link is-not-allowed">
+                    <img src="./img/bn_yumemiru.jpg" width="475" height="180" alt="" class="banner-list__img">
+                </a>
+            </li>
+            <li class="banner-list__item">
+                <a href="#" class="banner-list__item__link is-not-allowed">
+                    <img src="./img/bn_illust.png" width="475" height="180" alt="" class="banner-list__img">
+                </a>
+            </li>
+            <li class="banner-list__item">
+                <a href="#" class="banner-list__item__link is-not-allowed">
+                    <img src="./img/bn_koukai.jpg" width="475" height="180" alt="" class="banner-list__img">
+                </a>
+            </li>
+            <li class="banner-list__item">
+                <a href="#" class="banner-list__item__link is-not-allowed">
+                    <img src="./img/bn_highscool.jpg" width="475" height="180" alt="" class="banner-list__img">
+                </a>
+            </li>
+            <li class="banner-list__item">
+                <a href="#" class="banner-list__item__link is-not-allowed">
+                    <img src="./img/bn_blog.jpg" width="475" height="180" alt="" class="banner-list__img">
+                </a>
+            </li>
+        </ul>
+    </section>
+-->
+
+    <section class="case-study">
+        <div class="case-study__inner">
+            <div class="m-title-group case-study__title">
+                <h2 class="m-title-group__title js-scroll"><div class="motion-txt"><span class="motion-inner">Case Study</span></div></h2>
+                <div class="m-title-group__notes js-scroll"><div class="motion-txt"><span class="motion-inner">導入事例</span></div></div>
+            </div>
+            <ul class="case-study-list">
+                <li class="case-study-list__item is-not-allowed js-scroll slide-up">
+                    <div class="case-study-list__img"></div>
+                    <div class="case-study-list__category">IT・通信</div>
+                    <div class="case-study-list__company">株式会社ABCコーポレーション</div>
+                    <div class="case-study-list__summary">学生の声を迅速に収集・可視化できる環境を構築。大学が発信するお知らせもポータルサイトよりも確実に学生に届いていることを実感しています。</div>
+                </li>
+                <li class="case-study-list__item is-not-allowed js-scroll slide-up">
+                    <div class="case-study-list__img"></div>
+                    <div class="case-study-list__category">教育</div>
+                    <div class="case-study-list__company">学校法人信濃町学園 外苑前高等学校</div>
+                    <div class="case-study-list__summary">学生のチャットへダイレクトに配信して校務を効率化。ワーキンググループの活動にも活用し活発なディスカッションが実現しました。
+                    </div>
+                </li>
+                <li class="case-study-list__item is-not-allowed js-scroll slide-up">
+                    <div class="case-study-list__img"></div>
+                    <div class="case-study-list__category">IT・通信</div>
+                    <div class="case-study-list__company">学校法人京都学園　上終町大学</div>
+                    <div class="case-study-list__summary">校務伝達とコミュニケーションに活用。生徒間だけでなく教職員同士の連絡も可能になりスピーディかつきめ細かな対応が可能になりました。</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+<section class="sassoku js-scroll slide-up">
+    <div class="sassoku__inner">
+        <div class="sassoku__message">
+            <h2 class="sassoku__message__title">さっそく使い始めましょう</h2>
+            <div class="sassoku__message__lead">
+                利用シーンごとの操作が可能なデモ画面に進みます。<br>
+                今すぐアクセスして実際の操作を体感してみましょう。
+            </div>
+            <div class="sassoku__message__btn">
+                <a href="#" class="c-btn s-arrow s-inverse modal-open">デモへ進む</a>
+            </div>
+            <div class="sassoku__message__sublink"><a href="#" class="is-not-allowed">資料請求はこちら</a></div>
+        </div>
+        <div class="sassoku__visual">
+            <img src="./img/img_mockup.png" width="" height="" alt="">
+        </div>
+
+    </div>
+</section>
+
+<footer class="m-footer">
+    <div class="m-footer__inner">
+        <div class="m-footer-group">
+            <ul class="m-footer-nav">
+                <li class="m-footer-nav__item"><a href="#" class="m-footer-nav__item__link is-not-allowed">お問い合わせ</a></li>
+                <li class="m-footer-nav__item"><a href="#" class="m-footer-nav__item__link is-not-allowed">個人情報保護方針</a></li>
+                <li class="m-footer-nav__item"><a href="#" class="m-footer-nav__item__link is-not-allowed">ご利用規約</a></li>
+                <li class="m-footer-nav__item"><a href="#" class="m-footer-nav__item__link is-not-allowed">サイトマップ</a></li>
+            </ul>
+            <div class="m-footer-subnav">
+                <a href="#" class="m-footer-subnav__link is-not-allowed">会社概要</a>
+            </div>
+        </div>
+        <ul class="sns">
+            <li class="sns__item"><a href="#" class="is-not-allowed"><img src="./img/ico_twitter.svg" width="" height="" alt="Twitter"></a></li>
+            <li class="sns__item"><a href="#" class="is-not-allowed"><img src="./img/ico_facebook.svg" width="" height="" alt="Facebook"></a></li>
+            <li class="sns__item"><a href="#" class="is-not-allowed"><img src="./img/ico_instagram.svg" width="" height="" alt="Instagram"></a></li>
+        </ul>
+    </div>
+    <small class="copyright">(C) homeroom All Rights Reserved.</small>
+</footer>
+
+<section class="modal-content">
+        <div class="inner">
+            <div class="explain">
+                <p class="explain__lead">この先、プロトタイプに進みます。プロトタイプは画像をつなぎ合わせた紙芝居です。下記のシナリオに沿って、サービスの機能を体験することができます。デモ用アカウント（ID:test Password:123）でログインしてください。</p>
+                <dl class="scenario">
+                    <div class="scenario__btn">
+                        <dt class="scenario__title"><a href="https://www.figma.com/proto/t7KsrrZBFTuQRDTL4VwNBG/homeroom?node-id=298%3A0&viewport=754%2C398%2C0.29903873801231384&scaling=min-zoom" target="_blank" class="scenario__title__link">シナリオ1</a></dt>
+                        <dd class="scenario__detail">タイムラインと情報共有について</dd>
+                    </div>
+                    <div class="scenario__btn">
+                        <dt class="scenario__title"><a href="https://www.figma.com/proto/t7KsrrZBFTuQRDTL4VwNBG/homeroom?node-id=298%3A0&viewport=754%2C398%2C0.29903873801231384&scaling=min-zoom" target="_blank" class="scenario__title__link">シナリオ2</a></dt>
+                        <dd class="scenario__detail">単位取得済み科目の作品シェアと学生作品の閲覧について</dd>
+                    </div>
+                    <div class="scenario__btn">
+                        <dt class="scenario__title"><a href="https://www.figma.com/proto/t7KsrrZBFTuQRDTL4VwNBG/homeroom?node-id=298%3A0&viewport=754%2C398%2C0.29903873801231384&scaling=min-zoom" target="_blank" class="scenario__title__link">シナリオ3</a></dt>
+                        <dd class="scenario__detail">学習状況の可視化とコーチによるアシストについて</dd>
+                    </div>
+                </dl>
+
+            </div>
+        </div>
+    <div class="modal-close">
+                    <span class="nav-ico">
+                    </span>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js" integrity="sha512-Gk+uNk8NWN235mIkS6B7/424TsDuPDaoAsUekJCKTWLKP6wlaPv+PBGfO7dbvZeibVPGW+mYidz0vL0XaWwz4w==" crossorigin="anonymous"></script>
+<script src="./js/top.js?ggr"></script>
+
+</body>
+</html>
