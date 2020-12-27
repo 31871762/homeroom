@@ -20,10 +20,11 @@
   display: block;
   padding:22px 0 20px;
   background: $theme-color;
+  background: linear-gradient(270deg, #0B82C5 2.86%, #05B0A6 96.14%);
   color:#fff;
   position: relative;
 
-  &:visited {
+  &:visited,&:link {
     color:#fff;
   }
 

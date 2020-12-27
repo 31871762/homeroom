@@ -90,7 +90,7 @@ const anim = (pathname,shape, duration, easing, callback) => {
     }, duration, easing, callback)
 }
 //アニメーション呼び出し
-let flg = 2;
+let flg = 1;
 function AnimateSvg() {
     console.log(flg);
     if(flg === 2){
@@ -131,7 +131,7 @@ function AnimateSvg3() {
         anim(path3, beans3, 9000, mina.easeinout, AnimateSvg3);
         bsFlg = 3;
     }else if(bsFlg === 4){
-        anim(path3, beans4, 7000, mina.easeinout, AnimateSvg3);
+        anim(path3, beans4, 2000, mina.easeinout, AnimateSvg3);
         bsFlg = 4;
     }else {
         anim(path3, beans1, 9000, mina.easeinout, AnimateSvg3);
