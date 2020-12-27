@@ -92,7 +92,7 @@ const anim = (pathname,shape, duration, easing, callback) => {
 //アニメーション呼び出し
 let flg = 1;
 function AnimateSvg() {
-    console.log(flg);
+    //console.log(flg);
     if(flg === 2){
         anim(path, baloon2, 3000, mina.easeinout, AnimateSvg);
         flg = 3;
@@ -143,11 +143,7 @@ AnimateSvg();
 AnimateSvg2();
 AnimateSvg3();
 
-//参考
-//http://yhk.minibird.jp/honttoni/samples/sample70set/index4-2.html
-//https://qiita.com/bakira/items/cfd30107417c5b219c53
-//https://www.monster-dive.com/blog/web_creative/20150821_000223.php
-//https://app.codegrid.net/entry/snapsvg-1
+
 $(function () {
     //モーダルウィンドウを出現させるクリックイベント
     $(".modal-open").on('click', function (e) {
