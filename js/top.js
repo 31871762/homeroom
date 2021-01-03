@@ -27,20 +27,6 @@
        e.preventDefault();
     });
 
-
-/*    setInterval(() => {
-        anim(baloon2, 3000, mina.ease,colors[1])
-        setTimeout(() => {
-            anim(baloon1, 3000, mina.ease,colors[0])
-        }, 3000)
-        setTimeout(() => {
-            anim(baloon3, 3000, mina.ease,colors[2])
-        }, 6000)
-        setTimeout(() => {
-            anim(baloon1, 3000, mina.ease,colors[0])
-        }, 9000)
-    }, 12000);*/
-
 })();
 
 const baloon1 = "M289.12,609.34c-80,121.3-243.59-36.06-264.64-127.23-15.95-69,28.58-140,95-161.89,72-23.75,151.46,14.09,218.66-23.71C420.82,250,436.68,163.26,490,93.92,544.71,22.67,602,73.69,632.12,135.57,674,221.77,686.37,393.76,560,414.39c-37.06,6.05-71.1,5-105.87,22.33C382.94,472.13,331.55,545,289.12,609.34Z";
@@ -161,20 +147,25 @@ $(function () {
         $(".modal-overlay").fadeIn("fast");
         $(".modal-content").fadeIn("fast");
 
+        if(pf === ".mod-promo") {
+            $(".modal-content").addClass("s-promo");
+        }
+
         //コンテンツをセンタリングする
         centeringModalSyncer();
 
         //[.modal_overlay]、または[#modal-close]をクリックしたら…
         $(".modal-overlay,.modal-close").on('click', function () {
-
+            $(pf).css('display', 'none');
             //[#modal-content]と[.modal_overlay]をフェードアウトした後に…
-            $(".modal-content,.modal-overlay").fadeOut("slow", function () {
+            $(".modal-content,.modal-overlay").fadeOut("fast", function () {
 
                 //[.modal_overlay]を削除する
                 $('.modal-overlay').remove();
 
             });
-            //$(pf).css('display', 'none');
+
+            $(".modal-content").removeClass("s-promo");
             $("body").css('overflow-y', 'scroll');
         });
 
