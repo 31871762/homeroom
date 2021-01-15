@@ -154,6 +154,8 @@ $(function () {
         $(".modal-overlay").fadeIn("fast");
         $(".modal-content").fadeIn("fast");
 
+        $(".m-header,.m-footer,.l-container,.sassoku").addClass('is-blur');
+
         if(pf === ".mod-promo") {
             $(".modal-content").addClass("s-promo");
         }
@@ -169,11 +171,11 @@ $(function () {
 
                 //[.modal_overlay]を削除する
                 $('.modal-overlay').remove();
-
+                $(".m-header,.m-footer,.l-container,.sassoku").removeClass('is-blur');
             });
 
             $(".modal-content").removeClass("s-promo");
-            $("body").css('overflow-y', 'scroll');
+            $("body").css('overflow', 'inherit');
         });
 
     });
