@@ -8,7 +8,7 @@ body {
     color: $base-text-color;
     font-size: $b-font-size + px;
     line-height: $b-line-height;
-
+    overflow: hidden;
 }
 
 a{

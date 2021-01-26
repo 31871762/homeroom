@@ -27,6 +27,25 @@
        e.preventDefault();
     });
 
+    $(window).on('load',function(){
+
+        $('.loading').delay(500).queue(function(){
+            $(this).addClass('off').dequeue();
+            $('body').css('overflow-y', 'scroll');
+            $('.js-scroll-top').each( function() {
+                $.when(
+                    $(this).delay(300).addClass("is-show")
+                ).done(function() {
+                    $(this).delay(300).queue(function(){
+                        $(this).addClass("is-done")
+                    })
+                });
+
+            });
+        });
+    });
+
+
 })();
 
 const baloon1 = "M289.12,609.34c-80,121.3-243.59-36.06-264.64-127.23-15.95-69,28.58-140,95-161.89,72-23.75,151.46,14.09,218.66-23.71C420.82,250,436.68,163.26,490,93.92,544.71,22.67,602,73.69,632.12,135.57,674,221.77,686.37,393.76,560,414.39c-37.06,6.05-71.1,5-105.87,22.33C382.94,472.13,331.55,545,289.12,609.34Z";
