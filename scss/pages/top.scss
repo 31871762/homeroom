@@ -7,7 +7,7 @@
     max-width: 1500px;
     overflow: hidden;
     @media screen and(min-width: 1501px) {
-        overflow: inherit;
+        overflow:unset;
     }
     background: transparent url("../../img/img_hero4.svg") no-repeat scroll top 30px right -10%;
     background-size:64%;
