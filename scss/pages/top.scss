@@ -9,7 +9,7 @@
     @media screen and(min-width: 1501px) {
         overflow:unset;
     }
-    background: transparent url("../../img/img_hero4.svg") no-repeat scroll top 30px right -10%;
+    background: transparent url("../../img/img_hero4.svg") no-repeat scroll top 80px right -10%;
     background-size:64%;
 }
 
@@ -73,6 +73,9 @@
         @media screen and(min-width: 1500px) {
             font-size:55px;
         }
+        @media screen and(max-width: 800px) {
+            font-size:32px;
+        }
     }
 
     &__cta {
@@ -84,6 +87,9 @@
         margin:0 0 4vw;
         line-height: 1.6;
         color:#333;
+        @media screen and(max-width: 800px) {
+            font-size:16px;
+        }
     }
 
     &__sublink {
@@ -261,11 +267,17 @@
             width: 100%;
             margin:0 0 26px;
             font-size:1.8vw;
+            @media screen and(max-width: 800px) {
+                font-size:24px;
+            }
         }
         &__detail {
             color:$theme-color2;
             margin: 0;
             line-height: 1.6;
+            @media screen and(max-width: 800px) {
+                font-size:15px;
+            }
 
         }
     }
@@ -341,11 +353,17 @@
             width: 100%;
             margin:0 0 26px;
             font-size:1.8vw;
+            @media screen and(max-width: 800px) {
+                font-size:24px;
+            }
         }
         &__detail {
             color:$theme-color2;
             margin: 0;
             line-height: 1.6;
+            @media screen and(max-width: 800px) {
+                font-size:15px;
+            }
         }
     }
 }
@@ -395,12 +413,17 @@
             width: 100%;
             margin:0 0 26px;
             font-size:1.8vw;
+            @media screen and(max-width: 800px) {
+                font-size:24px;
+            }
         }
         &__detail {
             color:$theme-color2;
             line-height: 1.6;
             margin: 0;
-
+            @media screen and(max-width: 800px) {
+                font-size:15px;
+            }
         }
     }
     .func-list {
